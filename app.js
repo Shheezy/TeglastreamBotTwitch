@@ -126,21 +126,16 @@ setInterval(BusinessTimer, 1.26e+6); //21min
 
 //check twitch chat, delete message which isnt suitable and respond to it
 function checkChat(channel, username, message) {
-  let shouldSendMessage = false;
-  //check message
-  message = message.toLowerCase();
-  shouldSendMessage = blocked_words.some(blockedWord => message.includes(blockedWord.toLowerCase()));
-  //tell user
- // client.say(channel, `@${username.username} oopsie message deleted`);
-  //delete message
+  console.log(message)
+  message = message.toLowerCase()
+  let shouldSendMessage = false
+  shouldSendMessage = blocked_words.some(blockedWord => message.includes(blockedWord.toLowerCase()))
   if (shouldSendMessage) {
+
+    client.say(channel, `@${username.username} csak óvatosan, rossz vizekre evezel!`)
+
     client.deletemessage(channel, username.id)
-      .then((data) => {
-        //nothing
-      }).catch((err) => {
-        //nothing
-      });
-      client.say(channel, `@${username.username} figyelj a szavakra!`);
+
   }
 }
 
