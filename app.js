@@ -57,13 +57,6 @@ function onChatHandler(target, context, msg, self) {
   // Remove whitespace from chat message
   const commandName = msg.trim();
 
-  // If the command is known, let's execute it
-  if (commandName === '!dice') {
-    const num = rollDice();
-    client.say(target, `You rolled a ${num}`);
-    console.log(`* Executed ${commandName} command`);
-
-  }
   if (commandName === '!social') {
     client.say(target, `socials at www.twitter.com/pepega and www.pepega.com`);
   }
@@ -142,12 +135,6 @@ function onChatHandler(target, context, msg, self) {
     client.say("shheezyart", "A színem megváltozott!");
   }
 
-}
-
-// Function called when the "dice" command is issued
-function rollDice() {
-  const sides = 6;
-  return Math.floor(Math.random() * sides) + 1;
 }
 
 //check twitch chat, delete message which isnt suitable and respond to it
