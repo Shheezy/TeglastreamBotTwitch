@@ -1,13 +1,16 @@
-const tmi = require('tmi.js');
-const express = require('express')
+const express = require('express');
 const app = express();
 const port = 3000 
 
-app.get('/', (req, res) => res.send('Yo boi!!'))
+app.get('/', (req, res) => res.send('Ready to go'))
 
-app.listen(port, () =>
-console.log(`Your app is listening a http://localhost:${port}`)
-);
+app.listen(process.env,PORT || 3000, () => {
+  
+  console.log(`Go on port ${process.env.PORT || 3000}`);
+
+});
+
+const tmi = require('tmi.js');
 
 // Define configuration options
 const opts = {
