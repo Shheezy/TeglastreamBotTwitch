@@ -105,29 +105,6 @@ function onChatHandler(target, context, msg, self) {
     client.say(target, "Szia Czimbi! HeyGuys");
   }
 
-  if (commandName === '!clear') {
-    client.clear("shheezyart");
-    //wont work, no permissions
-  }
-
-  if (commandName === '!emoteY') {
-    client.emoteonly("shheezyart");
-    //wont work, no permissions
-  }
-
-  if (commandName === '!followY') {
-    client.followersonly("shheezyart");
-    //wont work, no permissions
-  }
-  if (commandName === '!followN') {
-    client.followersonlyoff("shheezyart");
-
-  }
-
-  if (commandName === '!emoteN') {
-    client.emoteonlyoff("shheezyart");
-
-  }
   if (commandName === '!color') {
     //console.log(client.getChannels());
     client.color(colors[Math.floor(Math.random() * 10)]);
