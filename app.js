@@ -174,5 +174,4 @@ function checkChat(channel, username, message) {
 function onConnectedHandler(addr, port) {
   console.log(`* Csatlakozva ide: ${addr}:${port}`);
   //client.say('Lonermoan', `connected to ${addr} and ${port}`);
-  client.action("shheezyart", 'Hoffmann szolgálatra kész!');
 }
