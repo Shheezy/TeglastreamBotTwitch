@@ -1,5 +1,6 @@
 const tmi = require('tmi.js');
 
+
 // Define configuration options
 const opts = {
   options: {
