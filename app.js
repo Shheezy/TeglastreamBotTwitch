@@ -114,6 +114,16 @@ function onChatHandler(target, context, msg, self) {
 
 }
 
+function DiscTimer() {
+  client.action('shheezyart', 'Üzleti dolgokkal kapcsolatban írj egy e-mailt a teglastream@gmail.com címre!');
+}
+setInterval(DiscTimer, 1.8e+6); //30min
+
+function BusinessTimer() {
+  client.action('shheezyart', 'Csatlakozz Discord szerveremre Czimbi! https://discord.teglastream.hu');
+}
+setInterval(BusinessTimer, 1.26e+6); //21min
+
 //check twitch chat, delete message which isnt suitable and respond to it
 function checkChat(channel, username, message) {
   let shouldSendMessage = false;
