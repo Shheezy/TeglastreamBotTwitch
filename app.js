@@ -1,33 +1,24 @@
-const express = require('express');
-const app = express();
-const port = 3000 
-
-app.get('/', (req, res) => res.send('✅A BOT ONLINE✅!'))
-
-app.listen(process.env.PORT || 3000, () => {
-  
-  console.log(`Go on port ${process.env.PORT || 3000}`);
-
-});
+require('dotenv').config();
 
 const tmi = require('tmi.js');
 
-// Define configuration options
-const opts = {
-  options: {
-    debug: true,
-  },
-  identity: {
-    username: "Hoffmann_Bot",
-    password: "oauth:b6gcchtnd1lyroiv1140aa8l5yijsl"
-  },
-  channels: [
-    "shheezyart",
-  ]
-};
+
 
 // Create a client with our options
-const client = new tmi.client(opts);
+const client = new tmi.client({
+  connection: {
+    reconnect: true
+  },
+	channels: [ 'shheezyart' ],
+  identity: {
+		username: process.env.TWITCH_BOT_USERNAME,
+		password: process.env.TWITCH_OAUTH_TOKEN
+	},
+
+})
+
+// Connect to Twitch:
+client.connect();
 
 //arrays
 const blocked_words = ['bababoii', 'trip', 'cats'];
@@ -46,9 +37,6 @@ client.on('message', (channel, userstate, message, self) => {
   }
   checkChat(channel, userstate, message);
 });
-
-// Connect to Twitch:
-client.connect();
 
 // Called every time a message comes in
 function onChatHandler(target, context, msg, self) {
@@ -119,10 +107,10 @@ function DiscTimer() {
 }
 setInterval(DiscTimer, 1.8e+6); //30min
 
-function BusinessTimer() {
+function BussinessTimer() {
   client.action('shheezyart', 'Csatlakozz Discord szerveremre Czimbi! https://discord.teglastream.hu');
 }
-setInterval(BusinessTimer, 1.26e+6); //21min
+setInterval(BussinessTimer, 1.26e+6); //21min
 
 //check twitch chat, delete message which isnt suitable and respond to it
 function checkChat(channel, username, message) {
