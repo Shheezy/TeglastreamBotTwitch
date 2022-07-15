@@ -101,12 +101,12 @@ function onChatHandler(target, context, msg, self) {
 function DiscTimer() {
   client.action('teglaofficial', 'Üzleti dolgokkal kapcsolatban írj egy e-mailt a teglastream@gmail.com címre!');
 }
-setInterval(DiscTimer, 1.8e+6); //30min
+setInterval(DiscTimer, 1800000); //30min
 
 function BussinessTimer() {
   client.action('teglaofficial', 'Csatlakozz Discord szerveremre Czimbi! https://discord.teglastream.hu');
 }
-setInterval(BussinessTimer, 1.26e+6); //21min
+setInterval(BussinessTimer, 900000); //15min
 
 //check twitch chat, delete message which isnt suitable and respond to it
 function checkChat(channel, username, message) {
