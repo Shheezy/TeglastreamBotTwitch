@@ -97,7 +97,7 @@ function onChatHandler(target, context, msg, self) {
     //console.log(client.getChannels());
     client.color(colors[Math.floor(Math.random() * 10)]);
     //change color of bot
-    client.say("shheezyart", "A színem megváltozott!");
+    client.say("shheezyart", "A színem megváltoztatva!");
   }
 
 }
