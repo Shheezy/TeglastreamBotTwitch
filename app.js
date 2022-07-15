@@ -45,10 +45,6 @@ function onChatHandler(target, context, msg, self) {
   // Remove whitespace from chat message
   const commandName = msg.trim();
 
-  if (commandName === '!social') {
-    client.say(target, `socials at www.twitter.com/pepega and www.pepega.com`);
-  }
-
   if (commandName === '!dc') {
     client.say(target, 'Csatlakozz Discord szerveremre CZimbi! https://discord.teglastream.hu/');
   }
