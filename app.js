@@ -9,7 +9,7 @@ const client = new tmi.client({
   connection: {
     reconnect: true
   },
-	channels: [ 'shheezyart' ],
+	channels: [ 'teglaofficial' ],
   identity: {
 		username: process.env.TWITCH_BOT_USERNAME,
 		password: process.env.TWITCH_OAUTH_TOKEN
@@ -21,7 +21,7 @@ const client = new tmi.client({
 client.connect();
 
 //arrays
-const blocked_words = ['zsoze', 'trip', 'cats'];
+const blocked_words = ['zsoze', 'Zsozeval', 'Zsozehoz', 'Zsozéhoz', 'Zsozéval', 'neger', 'néger', 'phub', 'zsozeata', 'zsozeatya', 'nibba', 'zsozéatya', 'zsozeatya', 'zsoze', 'zsizi', 'zsozé', 'dugás', 'pornhub', 'buzi', 'nigga', 'nigger', 'zsizivel', 'zsoz'];
 const colors = ["SpringGreen", "Blue", "Chocolate", "Red", "Coral", "Firebrick", "OrangeRed", "SeaGreen", "Green", "HotPink"];
 //colors.toString();
 
@@ -58,7 +58,7 @@ function onChatHandler(target, context, msg, self) {
   }
 
   if (commandName === '!donate') {
-    client.say(target, '	Czimbi. Ezen a linken keresztül tudod támogatni a csatorna működését: https://streamlabs.com/teglaofficial/tip');
+    client.say(target, 'Czimbi. Ezen a linken keresztül tudod támogatni a csatorna működését: https://streamlabs.com/teglaofficial/tip');
   }
 
   if (commandName === '!fb') {
@@ -97,18 +97,18 @@ function onChatHandler(target, context, msg, self) {
     //console.log(client.getChannels());
     client.color(colors[Math.floor(Math.random() * 10)]);
     //change color of bot
-    client.say("shheezyart", "A színem megváltoztatva!");
+    client.say("teglaofficial", "A színem megváltoztatva!");
   }
 
 }
 
 function DiscTimer() {
-  client.action('shheezyart', 'Üzleti dolgokkal kapcsolatban írj egy e-mailt a teglastream@gmail.com címre!');
+  client.action('teglaofficial', 'Üzleti dolgokkal kapcsolatban írj egy e-mailt a teglastream@gmail.com címre!');
 }
 setInterval(DiscTimer, 1.8e+6); //30min
 
 function BussinessTimer() {
-  client.action('shheezyart', 'Csatlakozz Discord szerveremre Czimbi! https://discord.teglastream.hu');
+  client.action('teglaofficial', 'Csatlakozz Discord szerveremre Czimbi! https://discord.teglastream.hu');
 }
 setInterval(BussinessTimer, 1.26e+6); //21min
 
