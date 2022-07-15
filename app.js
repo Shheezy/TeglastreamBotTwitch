@@ -21,7 +21,7 @@ const client = new tmi.client({
 client.connect();
 
 //arrays
-const blocked_words = ['bababoii', 'trip', 'cats'];
+const blocked_words = ['zsoze', 'trip', 'cats'];
 const colors = ["SpringGreen", "Blue", "Chocolate", "Red", "Coral", "Firebrick", "OrangeRed", "SeaGreen", "Green", "HotPink"];
 //colors.toString();
 
