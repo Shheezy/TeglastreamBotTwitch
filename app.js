@@ -114,7 +114,7 @@ setInterval(BussinessTimer, 1.26e+6); //21min
 
 //check twitch chat, delete message which isnt suitable and respond to it
 function checkChat(channel, username, message) {
-  console.log(message)
+  console.log(`${tags['display-name']}: ${message}`)
   message = message.toLowerCase()
   let shouldSendMessage = false
   shouldSendMessage = blocked_words.some(blockedWord => message.includes(blockedWord.toLowerCase()))
