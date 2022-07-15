@@ -130,5 +130,8 @@ function checkChat(channel, username, message) {
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler(addr, port) {
   console.log(`* Csatlakozva ide: ${addr}:${port}`);
+  
   //client.say('Lonermoan', `connected to ${addr} and ${port}`)fast;
 }
+
+console.log(`${tags['display-name']}: ${message}`);
