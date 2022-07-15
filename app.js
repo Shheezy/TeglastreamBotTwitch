@@ -133,5 +133,3 @@ function onConnectedHandler(addr, port) {
   
   //client.say('Lonermoan', `connected to ${addr} and ${port}`)fast;
 }
-
-console.log(`${tags['display-name']}: ${message}`);
