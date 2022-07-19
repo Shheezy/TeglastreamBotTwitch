@@ -86,11 +86,11 @@ function onChatHandler(target, context, msg, self) {
   }
 
   if (commandName === '!parancsok') {
-    client.say(target, 'A chatben használható parancsok: !donate, !fb, !rp, !interju, !taka, !tiktok, !yt, !rules, !dc');
+    client.say(target, 'A chatben használható parancsok: !donate, !sub, !fb, !rp, !interju, !taka, !tiktok, !yt, !rules, !dc');
   }
 
   if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
-    client.say(channel, `@${userstate.username}, Szia CZimbi! HeyGuys`);
+    client.say(target, "Szia CZimbi! HeyGuys");
   }
 
   if (commandName === '!color') {
