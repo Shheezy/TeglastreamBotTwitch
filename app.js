@@ -90,7 +90,7 @@ function onChatHandler(target, context, msg, self) {
   }
 
   if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
-    client.say(target, `@${user.username}, Szia CZimbi! HeyGuys`);
+    client.say(channel, `@${userstate.username}, Szia CZimbi! HeyGuys`);
   }
 
   if (commandName === '!color') {
