@@ -90,7 +90,7 @@ function onChatHandler(target, context, msg, self) {
   }
 
   if (commandName === '!szepastreamer') {
-    client.say(target, `Te vagy a szép @${username}`);
+    client.say(target, `Te vagy a szép Czimbi @${username}`);
   }
 
   if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
