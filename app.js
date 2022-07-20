@@ -93,6 +93,10 @@ function onChatHandler(target, context, msg, self) {
     client.say(target, "Szia CZimbi! HeyGuys");
   }
 
+  if (msg.includes("rp") || msg.includes("RP") || msg.includes("Rp")) {
+    client.say(target, "Woof Woof, jön Hoffmann letépi a kezed ha megint ilyen hülyeséget kérdezel! DansGame");
+  }
+
   if (commandName === '!color') {
     //console.log(client.getChannels());
     client.color(colors[Math.floor(Math.random() * 10)]);
