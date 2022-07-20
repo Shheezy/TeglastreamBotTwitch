@@ -89,12 +89,16 @@ function onChatHandler(target, context, msg, self) {
     client.say(target, 'A chatben használható parancsok: !donate, !sub, !fb, !rp, !interju, !taka, !tiktok, !yt, !rules, !dc');
   }
 
+  if (commandName === '!szepastreamer') {
+    client.say(target, `Te vagy a szép @${userstate.username}`);
+  }
+
   if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
     client.say(target, "Szia CZimbi! HeyGuys");
   }
 
-  if (msg.includes("rp") || msg.includes("RP") || msg.includes("Rp")) {
-    client.say(target, "Woof Woof, jön Hoffmann letépi a kezed ha megint ilyen hülyeséget kérdezel! DansGame");
+  if (msg.includes("rp?") || msg.includes("RP?") || msg.includes("Rp?")) {
+    client.say(target, "Woof Woof! Jön Hoffmann letépi a kezed ha megint ilyen hülyeséget kérdezel! DansGame");
   }
 
   if (commandName === '!color') {
