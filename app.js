@@ -43,7 +43,7 @@ client.on('message', (channel, userstate, message, self) => {
 });
 
 // Called every time a message comes in
-function onChatHandler(target, context, msg, userstate, self) {
+function onChatHandler(target, context, msg, userstate, username, self) {
   if (self) { return; } // Ignore messages from the bot
 
   // Remove whitespace from chat message
@@ -94,7 +94,7 @@ function onChatHandler(target, context, msg, userstate, self) {
   }
 
   if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
-    client.say(target, `Szia CZimbi! HeyGuys`);
+    client.say(target, `Szia @${userstate.username}! HeyGuys`);
   }
 
   if (msg.includes("rp?") || msg.includes("RP?") || msg.includes("Rp?")) {
