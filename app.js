@@ -39,16 +39,12 @@ client.on('message', (channel, userstate, message, self) => {
   if (message.toLowerCase() === '!szepastreamer') {
     client.say(channel, `Te vagy a szép @${userstate.username}!`);
   }
-  checkChat(channel, userstate, message);
-});
 
-client.on('msg', (target, userstate, self) => {
-  if (self) return;
-  //if (userstate.username === BOT_USERNAME) return;
-  if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
-    client.say(target, `Szia @${userstate.username}! HeyGuys`);
+  if (message.includes("Szia") || message.includes("SZIA") || message.includes("szia")) {
+    client.say(channel, `Szia @${userstate.username}! HeyGuys`);
   }
-  checkChat(target, userstate, msg);
+
+  checkChat(channel, userstate, message);
 });
 
 // Called every time a message comes in
