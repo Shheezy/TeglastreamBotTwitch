@@ -108,6 +108,8 @@ function onChatHandler(target, context, msg, userstate, username, self) {
     client.say("teglaofficial", "A színem megváltoztatva!");
   }
 
+  checkChat(channel, userstate, message);
+
 }
 
 function DiscTimer() {
