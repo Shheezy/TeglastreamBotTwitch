@@ -35,6 +35,10 @@ client.on('message', (channel, userstate, message, self) => {
   if (message.toLowerCase() === '!test') {
     client.say(channel, `@${userstate.username}, a bot tesztelése sikeres!`);
   }
+
+  if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
+    client.say(channel, `Szia CZimbi @${userstate.username} HeyGuys`);
+  }
   checkChat(channel, userstate, message);
 });
 
@@ -91,10 +95,6 @@ function onChatHandler(target, context, msg, self) {
 
   if (commandName === '!szepastreamer') {
     client.say(target, `Te vagy a szép Czimbi!`);
-  }
-
-  if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
-    client.say(target, "Szia CZimbi! HeyGuys");
   }
 
   if (msg.includes("rp?") || msg.includes("RP?") || msg.includes("Rp?")) {
