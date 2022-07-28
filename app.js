@@ -42,7 +42,7 @@ client.on('message', (channel, userstate, message, self) => {
   checkChat(channel, userstate, message);
 });
 
-client.on('msg', (target, userstate) => {
+client.on('msg', (target, userstate, self) => {
   if (self) return;
   //if (userstate.username === BOT_USERNAME) return;
   if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
