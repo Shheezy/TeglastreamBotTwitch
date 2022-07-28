@@ -94,7 +94,7 @@ function onChatHandler(target, context, msg, userstate, self) {
   }
 
   if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
-    client.say(target, `Szia CZimbi @${userstate.username}! HeyGuys`);
+    client.say(target, `Szia CZimbi! HeyGuys`);
   }
 
   if (msg.includes("rp?") || msg.includes("RP?") || msg.includes("Rp?")) {
