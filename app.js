@@ -35,15 +35,11 @@ client.on('message', (channel, userstate, message, self) => {
   if (message.toLowerCase() === '!test') {
     client.say(channel, `@${userstate.username}, a bot tesztelése sikeres!`);
   }
-
-  if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
-    client.say(channel, `Szia CZimbi @${userstate.username} HeyGuys`);
-  }
   checkChat(channel, userstate, message);
 });
 
 // Called every time a message comes in
-function onChatHandler(target, context, msg, self) {
+function onChatHandler(target, context, userstate, username, msg, self) {
   if (self) { return; } // Ignore messages from the bot
 
   // Remove whitespace from chat message
@@ -99,6 +95,10 @@ function onChatHandler(target, context, msg, self) {
 
   if (msg.includes("rp?") || msg.includes("RP?") || msg.includes("Rp?")) {
     client.say(target, "Woof Woof! Jön Hoffmann letépi a kezed ha megint ilyen hülyeséget kérdezel! DansGame");
+  }
+
+  if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
+    client.say(target, `Szia CZimbi @${userstate.username} HeyGuys`);
   }
 
   if (commandName === '!color') {
