@@ -35,6 +35,10 @@ client.on('message', (channel, userstate, message, self) => {
   if (message.toLowerCase() === '!test') {
     client.say(channel, `@${userstate.username}, a bot tesztelése sikeres!`);
   }
+
+  if (message.toLowerCase() === '!szepastreamer') {
+    client.say(channel, `Te vagy a szép @${userstate.username}!`);
+  }
   checkChat(channel, userstate, message);
 });
 
@@ -87,10 +91,6 @@ function onChatHandler(target, context, msg, userstate, self) {
 
   if (commandName === '!parancsok') {
     client.say(target, 'A chatben használható parancsok: !donate, !sub, !fb, !rp, !interju, !taka, !tiktok, !yt, !rules, !dc');
-  }
-
-  if (commandName === '!szepastreamer') {
-    client.say(target, `Te vagy a szép Czimbi!`);
   }
 
   if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
