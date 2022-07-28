@@ -108,7 +108,7 @@ function onChatHandler(target, channel, context, msg, userstate, username, self)
     client.say("teglaofficial", "A színem megváltoztatva!");
   }
 
-  checkChat(channel, userstate, message, msg);
+  checkChat(channel, target, userstate, message, msg);
 
 }
 
