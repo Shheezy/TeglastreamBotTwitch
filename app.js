@@ -42,8 +42,17 @@ client.on('message', (channel, userstate, message, self) => {
   checkChat(channel, userstate, message);
 });
 
+client.on('msg', (target, userstate) => {
+  if (self) return;
+  //if (userstate.username === BOT_USERNAME) return;
+  if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
+    client.say(target, `Szia @${userstate.username}! HeyGuys`);
+  }
+  checkChat(target, userstate, msg);
+});
+
 // Called every time a message comes in
-function onChatHandler(target, context, msg, userstate, self) {
+function onChatHandler(target, context, msg, self) {
   if (self) { return; } // Ignore messages from the bot
 
   // Remove whitespace from chat message
@@ -93,10 +102,6 @@ function onChatHandler(target, context, msg, userstate, self) {
     client.say(target, 'A chatben használható parancsok: !donate, !sub, !fb, !rp, !interju, !taka, !tiktok, !yt, !rules, !dc');
   }
 
-  if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
-    client.say(target, `Szia @${userstate.username}! HeyGuys`);
-  }
-
   if (msg.includes("rp?") || msg.includes("RP?") || msg.includes("Rp?")) {
     client.say(target, "Woof Woof! Jön Hoffmann letépi a kezed ha megint ilyen hülyeséget kérdezel! DansGame");
   }
@@ -107,8 +112,6 @@ function onChatHandler(target, context, msg, userstate, self) {
     //change color of bot
     client.say("teglaofficial", "A színem megváltoztatva!");
   }
-
-  checkChat(target, userstate, msg);
 
 }
 
