@@ -43,7 +43,7 @@ client.on('message', (channel, userstate, message, self) => {
 });
 
 // Called every time a message comes in
-function onChatHandler(target, channel, context, msg, userstate, username, self) {
+function onChatHandler(target, context, msg, userstate, self) {
   if (self) { return; } // Ignore messages from the bot
 
   // Remove whitespace from chat message
@@ -108,7 +108,7 @@ function onChatHandler(target, channel, context, msg, userstate, username, self)
     client.say("teglaofficial", "A színem megváltoztatva!");
   }
 
-  checkChat(channel, target, userstate, message, msg);
+  checkChat(target, userstate, message);
 
 }
 
