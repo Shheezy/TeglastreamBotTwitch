@@ -39,7 +39,7 @@ client.on('message', (channel, userstate, message, self) => {
 });
 
 // Called every time a message comes in
-function onChatHandler(target, context, userstate, username, msg, self) {
+function onChatHandler(target, context, msg, self) {
   if (self) { return; } // Ignore messages from the bot
 
   // Remove whitespace from chat message
@@ -93,12 +93,12 @@ function onChatHandler(target, context, userstate, username, msg, self) {
     client.say(target, `Te vagy a szép Czimbi!`);
   }
 
-  if (msg.includes("rp?") || msg.includes("RP?") || msg.includes("Rp?")) {
-    client.say(target, "Woof Woof! Jön Hoffmann letépi a kezed ha megint ilyen hülyeséget kérdezel! DansGame");
+  if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
+    client.say(target, "Szia CZimbi! HeyGuys");
   }
 
-  if (msg.includes("Szia") || msg.includes("SZIA") || msg.includes("szia")) {
-    client.say(target, `Szia CZimbi @${userstate.username} HeyGuys`);
+  if (msg.includes("rp?") || msg.includes("RP?") || msg.includes("Rp?")) {
+    client.say(target, "Woof Woof! Jön Hoffmann letépi a kezed ha megint ilyen hülyeséget kérdezel! DansGame");
   }
 
   if (commandName === '!color') {
