@@ -55,7 +55,7 @@ function onChatHandler(target, context, msg, self) {
   const commandName = msg.trim();
 
   if (commandName === '!dc') {
-    client.say(target, 'Csatlakozz Discord szerveremre CZimbi! https://discord.teglastream.hu/');
+    client.say(target, '/announceblue Csatlakozz Discord szerveremre CZimbi! https://discord.teglastream.hu/');
   }
 
   if (commandName === '!sub') {
