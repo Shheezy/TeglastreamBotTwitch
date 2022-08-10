@@ -59,43 +59,43 @@ function onChatHandler(target, context, msg, self) {
   }
 
   if (commandName === '!sub') {
-    client.say(target, 'Ha nem működne a sub Nálad czimbi, ezen a linken keresztül próbálkozz! https://www.twitch.tv/subs/teglaofficial');
+    client.say(target, '\/announce Ha nem működne a sub Nálad czimbi, ezen a linken keresztül próbálkozz! https://www.twitch.tv/subs/teglaofficial');
   }
 
   if (commandName === '!rules') {
-    client.say(target, '--Chatszabályzat-- || Tilos más Streamert említeni! (Kivétel ezalól a Raid/Host. Elsőnek TO-t, aztán Ban-t kapsz érte.) || Tilos más Streamerről kérdezni! (ha kérdésed van, biztos megkapod a !interju parancs alatt lévő videóban!) || -Tilos a Streamert sértően jellemezni. (Természetesen tudjuk mi odaillő és mi nem!) ||');
+    client.say(target, '\/announce --Chatszabályzat-- || Tilos más Streamert említeni! (Kivétel ezalól a Raid/Host. Elsőnek TO-t, aztán Ban-t kapsz érte.) || Tilos más Streamerről kérdezni! (ha kérdésed van, biztos megkapod a !interju parancs alatt lévő videóban!) || -Tilos a Streamert sértően jellemezni. (Természetesen tudjuk mi odaillő és mi nem!) ||');
   }
 
   if (commandName === '!donate') {
-    client.say(target, 'Czimbi. Ezen a linken keresztül tudod támogatni a csatorna működését: https://streamlabs.com/teglaofficial/tip');
+    client.say(target, '\/announce Czimbi. Ezen a linken keresztül tudod támogatni a csatorna működését: https://streamlabs.com/teglaofficial/tip');
   }
 
   if (commandName === '!fb') {
-    client.say(target, 'Megköszönöm czimbim ha Facebook-on is bekövetsz.https://www.facebook.com/Teglaofficial');
+    client.say(target, '\/announce Megköszönöm czimbim ha Facebook-on is bekövetsz.https://www.facebook.com/Teglaofficial');
   }
 
   if (commandName === '!interju') {
-    client.say(target, 'Kérdésedre több választ itt találsz: https://www.youtube.com/watch?v=GwCPgxAq2UI&ab_channel=TFKChannel');
+    client.say(target, '\/announce Kérdésedre több választ itt találsz: https://www.youtube.com/watch?v=GwCPgxAq2UI&ab_channel=TFKChannel');
   }
 
   if (commandName === '!rp') {
-    client.say(target, 'A 4MA Roleplay Discord szervere: https://discord.gg/4maroleplay');
+    client.say(target, '\/announce A 4MA Roleplay Discord szervere: https://discord.gg/4maroleplay');
   }
 
   if (commandName === '!tiktok') {
-    client.say(target, 'Elérhető vagyok TikTok-on is Czimbi. Dobom is a linket.https://www.tiktok.com/@tegla_official');
+    client.say(target, '\/announce Elérhető vagyok TikTok-on is Czimbi. Dobom is a linket.https://www.tiktok.com/@tegla_official');
   }
 
   if (commandName === '!yt') {
-    client.say(target, 'Ez a YouTube csatim. Megköszönöm ha feliratkozol ott is. ;)https://www.youtube.com/TeglaOfficial');
+    client.say(target, '\/announce Ez a YouTube csatim. Megköszönöm ha feliratkozol ott is. ;)https://www.youtube.com/TeglaOfficial');
   }
 
   if (commandName === '!taka') {
-    client.say(target, 'Nem bírsz viselkedni?!!?Jön Jusztika és el takarít a lépcsőházból!!');
+    client.say(target, '\/announce Nem bírsz viselkedni?!!?Jön Jusztika és el takarít a lépcsőházból!!');
   }
 
   if (commandName === '!parancsok') {
-    client.say(target, 'A chatben használható parancsok: !donate, !sub, !fb, !rp, !interju, !taka, !tiktok, !yt, !rules, !dc');
+    client.say(target, '\/announce A chatben használható parancsok: !donate, !sub, !fb, !rp, !interju, !taka, !tiktok, !yt, !rules, !dc');
   }
 
   if (msg.includes("rp?") || msg.includes("RP?") || msg.includes("Rp?")) {
@@ -112,12 +112,12 @@ function onChatHandler(target, context, msg, self) {
 }
 
 function DiscTimer() {
-  client.action('teglaofficial', 'Üzleti dolgokkal kapcsolatban írj egy e-mailt a teglastream@gmail.com címre!');
+  client.action('teglaofficial', '\/announce Üzleti dolgokkal kapcsolatban írj egy e-mailt a teglastream@gmail.com címre!');
 }
 setInterval(DiscTimer, 1500000); //25min
 
 function BussinessTimer() {
-  client.action('teglaofficial', 'Csatlakozz Discord szerveremre Czimbi! https://discord.teglastream.hu');
+  client.action('teglaofficial', '\/announce Csatlakozz Discord szerveremre Czimbi! https://discord.teglastream.hu');
 }
 setInterval(BussinessTimer, 2500000); //41min
 
