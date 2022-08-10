@@ -41,7 +41,7 @@ client.on('message', (channel, userstate, message, self) => {
   }
 
   if (message.includes("Szia") || message.includes("SZIA") || message.includes("szia")) {
-    client.say(channel, `/announceblue Szia @${userstate.username}! HeyGuys`);
+    client.say(channel, `Szia @${userstate.username}! HeyGuys`);
   }
 
   checkChat(channel, userstate, message);
@@ -55,7 +55,7 @@ function onChatHandler(target, context, msg, self) {
   const commandName = msg.trim();
 
   if (commandName === '!dc') {
-    client.say(target, 'Csatlakozz Discord szerveremre CZimbi! https://discord.teglastream.hu/');
+    client.say(target, '/announceblue Csatlakozz Discord szerveremre CZimbi! https://discord.teglastream.hu/');
   }
 
   if (commandName === '!sub') {
