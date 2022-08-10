@@ -41,7 +41,7 @@ client.on('message', (channel, userstate, message, self) => {
   }
 
   if (message.includes("Szia") || message.includes("SZIA") || message.includes("szia")) {
-    client.say(channel, `Szia @${userstate.username}! HeyGuys`);
+    client.say(channel, `/announcement Szia @${userstate.username}! HeyGuys`);
   }
 
   checkChat(channel, userstate, message);
