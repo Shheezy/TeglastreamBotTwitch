@@ -83,11 +83,11 @@ function onChatHandler(target, context, msg, self) {
   }
 
   if (commandName === '!tiktok') {
-    client.say(target, '\/announce Elérhető vagyok TikTok-on is Czimbi. Dobom is a linket.https://www.tiktok.com/@tegla_official');
+    client.say(target, '\/announce Elérhető vagyok TikTok-on is Czimbi. Dobom is a linket. https://www.tiktok.com/@tegla_official');
   }
 
   if (commandName === '!yt') {
-    client.say(target, '\/announce Ez a YouTube csatim. Megköszönöm ha feliratkozol ott is. ;)https://www.youtube.com/TeglaOfficial');
+    client.say(target, '\/announce Ez a YouTube csatim. Megköszönöm ha feliratkozol ott is. https://www.youtube.com/TeglaOfficial');
   }
 
   if (commandName === '!taka') {
