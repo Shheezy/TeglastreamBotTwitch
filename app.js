@@ -117,7 +117,7 @@ function DiscTimer() {
 setInterval(DiscTimer, 1500000); //25min
 
 function BussinessTimer() {
-  client.action('teglaofficial', 'Csatlakozz Discord szerveremre Czimbi! https://discord.teglastream.hu');
+  client.action('teglaofficial', 'Csatlakozz Discord szerveremre Czimbi: https://discord.teglastream.hu');
 }
 setInterval(BussinessTimer, 2500000); //41min
 
