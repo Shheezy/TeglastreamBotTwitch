@@ -112,12 +112,12 @@ function onChatHandler(target, context, msg, self) {
 }
 
 function DiscTimer() {
-  client.action('teglaofficial', '\/announce Üzleti dolgokkal kapcsolatban írj egy e-mailt a teglastream@gmail.com címre!');
+  client.action('teglaofficial', 'Üzleti dolgokkal kapcsolatban írj egy e-mailt a teglastream@gmail.com címre!');
 }
 setInterval(DiscTimer, 1500000); //25min
 
 function BussinessTimer() {
-  client.action('teglaofficial', '\/announce Csatlakozz Discord szerveremre Czimbi! https://discord.teglastream.hu');
+  client.action('teglaofficial', 'Csatlakozz Discord szerveremre Czimbi! https://discord.teglastream.hu');
 }
 setInterval(BussinessTimer, 2500000); //41min
 
