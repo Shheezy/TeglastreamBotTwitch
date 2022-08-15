@@ -63,7 +63,7 @@ function onChatHandler(target, context, msg, self) {
   }
 
   if (commandName === '!rules') {
-    client.say(target, '--Chatszabályzat-- || Tilos más Streamert említeni! (Kivétel ezalól a Raid/Host. Elsőnek TO-t, aztán Ban-t kapsz érte.) || Tilos más Streamerről kérdezni! (ha kérdésed van, biztos megkapod a !interju parancs alatt lévő videóban!) || -Tilos a Streamert sértően jellemezni. (Természetesen tudjuk mi odaillő és mi nem!) ||');
+    client.say(target, '--Chatszabályzat-- || Tilos más Streamert említeni! (Kivétel ezalól a Raid/Host. Elsőnek TO-t, aztán Ban-t kapsz érte.) || Tilos más Streamerről kérdezni! (ha kérdésed van, biztos megkapod a !interju parancs alatt lévő videóban!) || -Tilos a Streamert sértően jellemezni. (Természetesen tudjuk mi odaillő és mi nem!) || Tilos az MG bármilyen formában! (Aki ennek ellenére is csinálja, az adott streamről bannolva lesz.) ||');
   }
 
   if (commandName === '!donate') {
