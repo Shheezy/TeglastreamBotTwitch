@@ -40,7 +40,7 @@ client.on('message', (channel, userstate, message, self) => {
     client.say(channel, `Te vagy a szép @${userstate.username}!`);
   }
 
-  if (message.includes("Szia") || message.includes("SZIA") || message.includes("szia")) {
+  if (message.includes("Szia Tégla") || message.includes("SZIA TÉGLA") || message.includes("szia tégla") || message.includes("Szia tégla") || message.includes("szia tegla") || message.includes("szia Tégla") || message.includes("Szia Tegla")) {
     client.say(channel, `Szia @${userstate.username}! HeyGuys`);
   }
 
