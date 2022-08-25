@@ -71,7 +71,7 @@ function onChatHandler(target, context, msg, self) {
   }
 
   if (commandName === '!fb') {
-    client.say(target, 'Megköszönöm czimbim ha Facebook-on is bekövetsz.https://www.facebook.com/Teglaofficial');
+    client.say(target, 'Megköszönöm czimbim ha Facebook-on is bekövetsz! https://www.facebook.com/Teglaofficial');
   }
 
   if (commandName === '!interju') {
