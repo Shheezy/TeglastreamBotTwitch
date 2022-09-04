@@ -62,6 +62,10 @@ function onChatHandler(target, context, msg, self) {
     client.say(target, 'Ha nem működne a sub Nálad czimbi, ezen a linken keresztül próbálkozz! https://www.twitch.tv/subs/teglaofficial');
   }
 
+  if (commandName === '!subtember') {
+    client.say(target, 'Ha szeptemberben vásárolsz subot 20% kedvezményt kapsz 1 hónapos előfizetés esetén. Ha 3 hónapra fizetsz elő 25%-ot takaríthatsz meg, illetve ha 6 hónapra fizetsz elő, 30%-al kevesebbet fizetsz majd!');
+  }
+
   if (commandName === '!rules') {
     client.say(target, '--Chatszabályzat-- || Tilos más Streamert említeni! (Kivétel ezalól a Raid/Host. Elsőnek TO-t, aztán Ban-t kapsz érte.) || Tilos más Streamerről kérdezni! (ha kérdésed van, biztos megkapod a !interju parancs alatt lévő videóban!) || -Tilos a Streamert sértően jellemezni. (Természetesen tudjuk mi odaillő és mi nem!) || Tilos az MG bármilyen formában! (Aki ennek ellenére is csinálja, az adott streamről bannolva lesz.) ||');
   }
