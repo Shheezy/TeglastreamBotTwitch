@@ -125,11 +125,6 @@ function BussinessTimer() {
 }
 setInterval(BussinessTimer, 2500000); //41min
 
-function BlyatTimer() {
-  client.action('teglaofficial', 'Lehetőséged van moderátornak jelentkezni Twitchre/Tiktokra egyaránt, további infókért csatlakozz Discordra: https://discord.teglastream.hu/');
-}
-setInterval(BlyatTimer, 1900000); //41min
-
 //check twitch chat, delete message which isnt suitable and respond to it
 function checkChat(channel, username, message) {
   console.log(username.username, message)
