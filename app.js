@@ -125,6 +125,11 @@ function BussinessTimer() {
 }
 setInterval(BussinessTimer, 2500000); //41min
 
+function YoutubeTimer() {
+  client.action('teglaofficial', 'A VOD-okat mostantól itt éred el czimbi: https://www.youtube.com/TeglaOfficial');
+}
+setInterval(YoutubeTimer, 2000000); //41min
+
 //check twitch chat, delete message which isnt suitable and respond to it
 function checkChat(channel, username, message) {
   console.log(username.username, message)
