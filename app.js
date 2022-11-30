@@ -58,6 +58,10 @@ function onChatHandler(target, context, msg, self) {
     client.say(target, "Csatlakozz Discord szerveremre CZimbi! https://discord.teglastream.hu/");
   }
 
+  if (commandName === '!12') {
+    client.say(target, "A jótékonysági stream December 18.-án vasárnap reggel 10 órától, este 10 óráig lesz megtartva!");
+  }
+
   if (commandName === '!sub') {
     client.say(target, 'Ha nem működne a sub Nálad czimbi, ezen a linken keresztül próbálkozz! https://www.twitch.tv/subs/teglaofficial');
   }
