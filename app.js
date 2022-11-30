@@ -106,6 +106,10 @@ function onChatHandler(target, context, msg, self) {
     client.say(target, "Woof Woof! Jön Hoffmann letépi a kezed ha megint ilyen hülyeséget kérdezel! DansGame");
   }
 
+  if (commandName === '!health') {
+    console.log(response.status);
+  }
+
   if (commandName === '!color') {
     //console.log(client.getChannels());
     client.color(colors[Math.floor(Math.random() * 10)]);
