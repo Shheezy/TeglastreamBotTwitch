@@ -23,7 +23,7 @@ async function makeRequest() {
 
     console.log('status code: ', response.status); // 👉️ 200
 
-    if (!response.ok) {
+    if (response.ok) {
       console.log(response);
       throw new Error(`Error! status: ${response.status}`);
     }
