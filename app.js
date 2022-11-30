@@ -15,7 +15,27 @@ const client = new tmi.client({
 		password: process.env.TWITCH_OAUTH_TOKEN
 	},
 
-})
+});
+
+async function makeRequest() {
+  try {
+    const response = await fetch();
+
+    console.log('status code: ', response.status); // 👉️ 200
+
+    if (!response.ok) {
+      console.log(response);
+      throw new Error(`Error! status: ${response.status}`);
+    }
+
+    const result = await response.json();
+    return result;
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+makeRequest();
 
 // Connect to Twitch:
 client.connect();
