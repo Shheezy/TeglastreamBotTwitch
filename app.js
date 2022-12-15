@@ -59,7 +59,7 @@ function onChatHandler(target, context, msg, self) {
   }
 
   if (commandName === '!cup') {
-    client.say(target, "Versenyeznél a spanoddal Rocket Leagueben? Akkor gyere el az első Tiszanekeresd Amateur Cup versenyére, December 25.-én ahol 3800 Credit kerül szétosztásra! További információk és jelentkezés: https://cup.teglastream.hu");
+    client.say(target, "Versenyeznél a spanoddal Rocket Leagueben? Akkor gyere el az első Tiszanekeresd Amateur Cup versenyére, December 25.-én ahol 3800 Credit kerül szétosztásra a döntősök között! További információk és jelentkezés: https://cup.teglastream.hu");
   }
 
   if (commandName === '!12') {
