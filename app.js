@@ -58,6 +58,10 @@ function onChatHandler(target, context, msg, self) {
     client.say(target, "Csatlakozz Discord szerveremre CZimbi! https://discord.teglastream.hu/");
   }
 
+  if (commandName === '!cup') {
+    client.say(target, "Versenyeznél a spanoddal Rocket Leagueben? Akkor gyere el az első Tiszanekeresd Amateur Cup versenyére, December 25.-én ahol 3800 Credit kerül szétosztásra! További információk és jelentkezés: https://cup.teglastream.hu");
+  }
+
   if (commandName === '!12') {
     client.say(target, "A jótékonysági stream December 18.-án vasárnap reggel 10 órától, este 10 óráig lesz megtartva!");
   }
