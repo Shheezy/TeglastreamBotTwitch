@@ -90,8 +90,12 @@ function onChatHandler(target, context, msg, self) {
     client.say(target, 'Kérdésedre több választ itt találsz: https://www.youtube.com/watch?v=GwCPgxAq2UI&ab_channel=TFKChannel');
   }
 
-  if (commandName === '!rp') {
+  if (commandName === '!4ma') {
     client.say(target, 'A 4MA Roleplay Discord szervere: https://discord.gg/4maroleplay');
+  }
+
+  if (commandName === '!4mahun') {
+    client.say(target, 'A 4MA Roleplay Discord szervere: https://discord.gg/nstnTQwUD4');
   }
 
   if (commandName === '!tiktok') {
