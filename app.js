@@ -16,7 +16,7 @@ const client = new tmi.client({
 
 client.connect();
 
-const blocked_words = [];
+const blocked_words = ['zsoze', 'Zsozeval', 'Zsozehoz', 'Zsozéhoz', 'Zsozéval', 'neger', 'néger', 'phub', 'zsozeata', 'zsozeatya', 'nibba', 'zsozéatya', 'zsozeatya', 'zsoze', 'zsizi', 'zsozé', 'dugás', 'pornhub', 'buzi', 'nigga', 'nigger', 'zsizivel', 'zsoz'];
 const colors = ["SpringGreen", "Blue", "Chocolate", "Red", "Coral", "Firebrick", "OrangeRed", "SeaGreen", "Green", "HotPink"];
 
 client.on('chat', onChatHandler);
