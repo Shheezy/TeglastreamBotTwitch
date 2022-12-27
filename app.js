@@ -2,9 +2,6 @@ require('dotenv').config();
 
 const tmi = require('tmi.js');
 
-
-
-// Create a client with our options
 const client = new tmi.client({
   connection: {
     reconnect: true
@@ -17,21 +14,16 @@ const client = new tmi.client({
 
 });
 
-// Connect to Twitch:
 client.connect();
 
-//arrays
 const blocked_words = ['zsoze', 'Zsozeval', 'Zsozehoz', 'Zsozéhoz', 'Zsozéval', 'neger', 'néger', 'phub', 'zsozeata', 'zsozeatya', 'nibba', 'zsozéatya', 'zsozeatya', 'zsoze', 'zsizi', 'zsozé', 'dugás', 'pornhub', 'buzi', 'nigga', 'nigger', 'zsizivel', 'zsoz'];
 const colors = ["SpringGreen", "Blue", "Chocolate", "Red", "Coral", "Firebrick", "OrangeRed", "SeaGreen", "Green", "HotPink"];
-//colors.toString();
 
-
-// Register our event handlers (defined below)
 client.on('chat', onChatHandler);
 client.on('connected', onConnectedHandler);
 client.on('message', (channel, userstate, message, self) => {
   if (self) return;
-  //if (userstate.username === BOT_USERNAME) return;
+
   if (message.toLowerCase() === '!test') {
     client.say(channel, `@${userstate.username}, a bot tesztelése sikeres!`);
   }
@@ -47,11 +39,9 @@ client.on('message', (channel, userstate, message, self) => {
   checkChat(channel, userstate, message);
 });
 
-// Called every time a message comes in
 function onChatHandler(target, context, msg, self) {
-  if (self) { return; } // Ignore messages from the bot
+  if (self) { return; } 
 
-  // Remove whitespace from chat message
   const commandName = msg.trim();
 
   if (commandName === '!dc') {
@@ -119,9 +109,7 @@ function onChatHandler(target, context, msg, self) {
   }
 
   if (commandName === '!color') {
-    //console.log(client.getChannels());
     client.color(colors[Math.floor(Math.random() * 10)]);
-    //change color of bot
     client.say("teglaofficial", "A színem megváltoztatva!");
   }
 
@@ -142,7 +130,6 @@ function YoutubeTimer() {
 }
 setInterval(YoutubeTimer, 2000000); //41min
 
-//check twitch chat, delete message which isnt suitable and respond to it
 function checkChat(channel, username, message) {
   console.log(username.username, message)
   message = message.toLowerCase()
@@ -157,9 +144,6 @@ function checkChat(channel, username, message) {
   }
 }
 
-// Called every time the bot connects to Twitch chat
 function onConnectedHandler(addr, port) {
   console.log(`* Csatlakozva ide: ${addr}:${port}`);
-  
-  //client.say('Lonermoan', `connected to ${addr} and ${port}`)fast;
 }
