@@ -45,7 +45,7 @@ function onChatHandler(target, context, msg, self) {
   const commandName = msg.trim();
 
   if (commandName === '!parancsok') {
-    client.say(target, 'A chatben használható parancsok: !donate, !sub, !fb, !rp, !interju, !taka, !tiktok, !yt, !rules, !dc');
+    client.say(target, 'A chatben használható parancsok: !dc, !sub, !rules, !donate, !fb, !interju, !4ma, !4mahun, !tiktok, !yt');
   }
 
   if (commandName === '!dc') {
