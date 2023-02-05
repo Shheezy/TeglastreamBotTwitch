@@ -56,6 +56,10 @@ function onChatHandler(target, context, msg, self) {
     client.say(target, 'Ha nem működne a sub Nálad czimbi, ezen a linken keresztül próbálkozz! https://www.twitch.tv/subs/teglaofficial');
   }
 
+  if (commandName === '!errol') {
+    client.say(target, 'Semmiről, azaz mindenről. Kappa');
+  }
+
   if (commandName === '!rules') {
     client.say(target, 'CHATSZABÁLYZAT || (A szabályzat nem ismerete nem mentesít a következmények alól!) || Tilos más Streamert említeni! (Kivétel ezalól a Raid/Host. Elsőnek TO-t, aztán Ban-t kapsz érte.) || Tilos más Streamerről kérdezni! (ha kérdésed van, biztos megkapod a !interju parancs alatt lévő videóban!) || Tilos a Streamert sértően jellemezni. (Természetesen tudjuk mi odaillő és mi nem!) || A "Mikor lesz RP?" és hozzá kapcsolódó kérdések, automatikus kitiltást kapnak az adott streamről! || Tilos az MG bármilyen formában RP streamek alatt! (Aki ennek ellenére is csinálja, az adott streamről bannolva lesz.)||');
   }
