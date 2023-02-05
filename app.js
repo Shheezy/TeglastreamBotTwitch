@@ -104,7 +104,7 @@ function onChatHandler(target, context, msg, self) {
 }
 
 function DiscTimer() {
-  client.action('teglaofficial', 'Csatllakozz Te is Tiszanekeresdhez: https://discord.teglastream.hu');
+  client.action('teglaofficial', 'Csatlakozz Te is Tiszanekeresdhez: https://discord.teglastream.hu');
 }
 setInterval(DiscTimer, 1500000); //25min
 
