@@ -4,9 +4,10 @@ const tmi = require('tmi.js');
 
 const client = new tmi.client({
   connection: {
+    secure: true,
     reconnect: true
   },
-	channels: [ 'teglaofficial' ],
+	channels: ['teglaofficial'],
   identity: {
 		username: process.env.TWITCH_BOT_USERNAME,
 		password: process.env.TWITCH_OAUTH_TOKEN
@@ -21,7 +22,7 @@ const colors = ["SpringGreen", "Blue", "Chocolate", "Red", "Coral", "Firebrick",
 
 client.on('chat', onChatHandler);
 client.on('connected', onConnectedHandler);
-client.on('message', (channel, userstate, message, self) => {
+client.on('message', async (channel, userstate, message, self) => {
   if (self) return;
 
   if (message.toLowerCase() === '!test') {
